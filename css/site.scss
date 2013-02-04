@@ -1,0 +1,14 @@
+@import 'reset';
+@import 'global';
+
+.landscape {
+	@import 'landscape';
+}
+
+@media all and (max-width: 768px) {
+	@import 'mobile';
+}
+
+@media all and (min-width: 769px) {
+	@import 'desktop';
+}
