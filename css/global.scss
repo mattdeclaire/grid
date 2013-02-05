@@ -19,17 +19,23 @@ body {
 	td {
 		width: 10%;
 		height: 10%;
-		background-color: #EEE;
 		border: 1px solid #FFF;
+		background-color: #DDD;
 
-		&:hover {
-			background-color: #CCC;
-			cursor: pointer;
+		&.available {
+			background-color: #EEE;
 		}
 	}
 }
 
-#player_info {
+body.player-selected {
+	#grid td.available:hover {
+		background-color: #CCC;
+		cursor: pointer;
+	}
+}
+
+.info-form {
 	display: none;
 	position: absolute;
 	top: 50%;

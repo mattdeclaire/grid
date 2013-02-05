@@ -17,6 +17,7 @@
 	<table id="grid">
 		<tr>
 			<th colspan="11">
+				<a href="#" id="new-split">add split</a>
 				<a href="#" id="new_player">new player</a>
 			</th>
 		<tr>
@@ -30,15 +31,15 @@
 			<tr>
 				<th><?=$y?></th>
 				<?php foreach (range(0, 9) as $x): ?>
-					<td id="<?="$x-$y"?>"></td>
+					<td id="<?="$x-$y"?>"><!-- empty --></td>
 				<?php endforeach; ?>
 			</tr>
 		<?php endforeach; ?>
 	</table>
 
-	<div id="blind"></div>
+	<div id="blind"><!-- empty --></div>
 
-	<form id="player_info">
+	<form id="player-info" class="info-form">
 		<label>
 			name
 			<input type="text" name="name">
@@ -49,7 +50,25 @@
 			<input type="text" name="email">
 		</label>
 
-		<input type="submit" value="GO">
+		<input type="submit" value="choose squares">
+	</form>
+
+	<form id="split" class="info-form">
+		<table id="splits"><!-- JS --></table>
+
+		<label>
+			name
+			<input type="text" name="name">
+		</label>
+
+		<label>
+			percentage of take
+			<input type="text" name="split">
+		</label>
+
+		<input type="submit" value="add">
+
+		<a href="#" class="close">close</a>
 	</form>
 
 </body>
