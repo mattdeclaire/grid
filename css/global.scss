@@ -28,11 +28,9 @@ body {
 	}
 }
 
-body.player-selected {
-	#grid td.available:hover {
-		background-color: #CCC;
-		cursor: pointer;
-	}
+body.player-selected #grid td.available:hover {
+	background-color: #CCC;
+	cursor: pointer;
 }
 
 .info-form {

@@ -18,7 +18,9 @@
 		<tr>
 			<th colspan="11">
 				<a href="#" id="new-split">add split</a>
-				<a href="#" id="new_player">new player</a>
+				<a href="#" id="new-player">new player</a>
+				<a href="#" id="fill">fill</a>
+				<a href="#" id="set-scores">set scores</a>
 			</th>
 		<tr>
 			<th></th>
@@ -53,8 +55,8 @@
 		<input type="submit" value="choose squares">
 	</form>
 
-	<form id="split" class="info-form">
-		<table id="splits"><!-- JS --></table>
+	<form id="splits" class="info-form">
+		<table class="splits"><!-- JS --></table>
 
 		<label>
 			name
@@ -66,7 +68,15 @@
 			<input type="text" name="split">
 		</label>
 
-		<input type="submit" value="add">
+		<input type="submit" value="add" />
+
+		<a href="#" class="close">close</a>
+	</form>
+
+	<form id="scores" class="info-form">
+		<table class="splits"><!-- JS --></table>
+
+		<input type="submit" value="submit" />
 
 		<a href="#" class="close">close</a>
 	</form>
